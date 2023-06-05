@@ -1,0 +1,48 @@
+package objetodesafio;
+
+public class Caneta {
+	public String modelo;
+	public String cor;
+	private float ponta;
+	protected int carga;
+	protected boolean tampada;
+	protected boolean despampada;
+	
+	public void status() {
+		System.out.println("Modelo: " + this.modelo);
+		System.out.println("Cor: " + this.cor);
+		System.out.println("Ponta: " + this.ponta);
+		System.out.println("Carga:  " + this.carga);
+		System.out.println("Esta tampada? " + this.tampada);
+		
+		
+		
+	}
+	
+	
+	public void rabiscar() {
+		if (this.tampada == true) {
+			System.out.print("Não posso rabiscar");
+		}else {
+			System.out.print(" Estou rabiscando!");
+		}
+		
+		
+	}
+	
+	
+	
+	protected void tampar() {
+		this.tampada = true;
+		
+	}
+	
+	
+	protected void destampar() {
+		this.despampada = true;
+		
+		
+	}
+	
+
+}
